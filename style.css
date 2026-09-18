@@ -1,0 +1,460 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #021323;
+    gap: 8px;
+    display: grid;
+    width: 700px;
+    grid-template-areas: 
+        "cabecalho"
+        "secoes"
+        "rodape"
+    ;
+
+}
+
+header{
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: aquamarine;
+    padding: 7px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #02B8FD;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(to right, #000913, #07213C);
+}
+
+
+h2{
+    margin-bottom: 0;
+}
+
+h3{
+    margin: 0;
+    font-size: 13px;
+}
+
+
+h6{
+    margin: 0;
+    font-size: 8px;
+}
+
+
+.titulo_topo{
+    flex: 2;
+}
+
+.titulo_topo p{
+    color: #02B8FD;
+    text-align: left;
+    font-size: 8px;
+    margin-top: 0;
+}
+
+
+.topo_right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    position: relative;
+    padding-left: 15px;
+
+}
+
+.topo_right::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-image: radial-gradient(circle, #4397f7, #0275f8, #07213C);
+}
+
+.secoes{
+    grid-area: secoes;
+    display: flex;
+    gap: 8px;
+}
+
+.menu{
+    flex: 1;
+    border: 1px solid #0676f5;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+
+.calculadora{
+    margin: 10px;
+    text-align: center;
+    background-color: #021323;
+    border-radius: 7px;
+    border: 0.1px solid #022956;
+}
+
+.topo_seus_dados{
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    border-radius: 7px 7px 0 0;
+}
+
+.titulo_sexo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0 0 0;
+    font-size: 11px;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.sexo{
+    display: flex;
+    gap: 7px;
+    padding-bottom: 15px;
+}
+
+
+.btn_sexo_masculino{
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    border: 1px solid #0676f5;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn_sexo_masculino:hover{
+    background-color: #004DEF;
+}
+
+.btn_sexo_feminino{
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    border: 1px solid #0676f5;
+    padding: 4px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_sexo_feminino:hover{
+    background-color: #004DEF;
+}
+
+.simbolo_masculino::before{
+    content: "\2642";
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.simbolo_feminino::before{
+    content: "\2640";
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.altura{
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+    position: relative;
+    padding: 10px 0 0 0;
+}
+
+.altura::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: radial-gradient(circle,#064893, #05325c, #021323);
+}
+
+.peso{
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+    position: relative;
+    padding: 10px 0 0 0;
+}
+
+.peso::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: radial-gradient(circle,#064893, #05325c, #021323);
+}
+
+.input{
+    display: flex;
+    padding: 3px 0 15px 0;
+}
+input{
+    width: 100%;
+    margin: 0px 5px 0 5px;
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+    border: 1px solid #0676f5;
+    background-color: #021323;
+    color: #ffffff;
+}
+
+.button{
+    display: flex;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 7px;
+    background-image: linear-gradient(to bottom, #95c6ff, #137ffb, #01356f);
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.button strong{
+    font-size: 12px;
+}
+
+.button button::before{
+    content: "\1f5a9";
+    font-size: 35px;
+    line-height: 1;
+}
+
+.tela_resultado{
+    display: flex;
+    flex: 1.5;
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: #021323;
+    border: 1px solid #0676f5;
+}
+
+.sub_tela_resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    gap: 10px;
+}
+
+.titulo_resultado{
+    display: flex;
+    align-items: center;
+    padding: 0 0 8px 0;
+}
+
+.img_coracao_resultado{
+    width: 35px;
+}
+
+.medidor{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; 
+     
+    background: conic-gradient(
+        from 0deg,
+
+        #ebe727 0deg 60deg,
+        transparent 60deg 72deg,
+
+        #f22929 72deg 132deg,
+        transparent 132deg 144deg,
+
+        #cb03e2 144deg 204deg,
+        transparent 204deg 216deg,
+
+        #18a2ed 216deg 276deg,
+        transparent 276deg 288deg,
+
+        #59cf5c 288deg 348deg,
+        transparent 348deg 360deg
+    ); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.medidor::before{
+    content: "";
+    position: absolute;
+    background-color: #03223f;
+
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.resultado{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 130px;
+}
+
+.circulo{
+    position: relative;
+    z-index: 2;
+}
+
+
+.campo_texto{
+    display: flex;
+    border: 1px solid #0275f8;
+    width: 100%;
+    height: 100%;
+}
+
+
+.sub_campo_texto{
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.texto_dados{
+    height: 55%;
+    width: 100%;
+}
+
+.imagem{
+    height: 45%;
+    width: 100%;
+}
+
+
+.texto_imc{
+    position: relative;
+    flex: 1.2;
+    font-size: 12px;
+    padding: 3px 0 0 3px;
+}
+
+.texto_imc::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(circle, #064893, #05325c, #021323);
+}
+
+.texto_imc span{
+    color: #02B8FD;
+    padding: 3px;
+}
+
+.texto_imc h5{
+    margin: 5px;
+}
+
+.img_seus_dados{
+    width: 35px;
+}
+
+.img_dados{
+    width: 25px;
+}
+
+.rodape{
+    grid-area: rodape;
+    padding: 10px;
+    display: flex;
+    border: 1.5px solid #0676f5;
+    margin: 0 10px 10px 10px;
+    border-radius: 8px;
+    background-color: #051424;
+}
+.anuncio{
+    display: flex;
+    flex: 1;
+    font-size: 10px;
+}
+
+.anuncio span{
+    text-align: left;
+    line-height: 1.3;
+}
+
+.linha{
+    position: relative;
+    padding-left: 10px;
+}
+
+.linha::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-image: radial-gradient(circle,#064893, #0275f8, #4397f7);
+}
+
+.img_coracao_topo_left{
+    border-radius: 16px;
+    width: 80px;
+    height: 80px;
+}
+
+.img_coracao_topo_right{
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    margin-right: 7px;
+}
+
+.img_rodape{
+    width: 45px;
+    height: 40px;
+}
+
+.img_rodape_2{
+    width: 100%;
+}
+
+.div_rodape_2{
+    flex: 0.5;
+}

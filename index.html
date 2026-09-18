@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--CONTAINER-->
+    <div class="container">
+        <!--CABEÇALHO-->
+        <header class="cabecalho">
+
+            <img class="img_coracao_topo_left" src="images/img_coracao_topo.png" alt="imagem coração">
+
+            <div class="titulo_topo">
+                <h2>Calculadora de <span>IMC</span></h2>
+                <p>Descubra se o seu peso está adequado para a sua altura</p>
+            </div>
+
+            <div class="topo_right">
+                <img class="img_coracao_topo_right" src="images/img_coracao_topo_right.png" alt="imagem coração">
+                <h6>Cuidar da sua saúde<br>é um ato de amor próprio!</h6>
+            </div>
+
+        </header>
+
+        <section class="secoes">
+
+            <div class="menu">
+                <div class="topo_seus_dados">
+                    <img class="img_seus_dados" src="images/img_seus_dados.png">
+                    <div class="titulo_seus_dados">
+                        <h3>Seus dados</h3>
+                        <h6>Preencha as informações abaixo para calcular seu IMC</6>
+                    </div>
+                </div>
+                <div class="calculadora">
+
+                    <div class="titulo_sexo">
+                        <img class="img_dados" src="images/img_seus_dados.png">
+                        <label>Sexo</label>
+                    </div>
+
+                    <div class="sexo">
+                        <div class="btn_sexo_masculino">
+                            <strong class="simbolo_masculino">Masculino</strong>
+                        </div>
+
+                        <div class="btn_sexo_feminino">
+                            <strong class="simbolo_feminino">Feminino</strong>
+                        </div>
+                    </div>
+
+                    <div class="altura">
+                        <img class="img_dados" src="images/img_altura.png">
+                        <label name="altura">Altura</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="altura" name="altura" placeholder="Digite a sua altura...Ex.: 1.75">
+                    </div>
+
+                    <div class="peso">
+                        <img class="img_dados" src="images/img_peso.png">
+                        <label name="peso">Peso</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="peso" name="peso" placeholder="Digite seu peso...Ex.: 75">
+                    </div>
+
+                    <div class="button">
+                        <button id="botao"><strong>Calcular IMC</strong></button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tela_resultado">
+                <div class="sub_tela_resultado">
+
+                    <div class="titulo_resultado">
+                        <img class="img_coracao_resultado" src="images/img_seu_imc.png">
+                        Seu IMC
+                    </div>
+
+                    <div class="medidor">
+                        <div class="circulo">
+                            <div class="resultado">00,00</div>
+                        </div>
+                    </div>
+
+                    <div class="campo_texto">
+                        <div class="sub_campo_texto">
+
+                            <div class="texto_dados">
+                                <img src="images/img_faixas.png" style="width: 100%; height: 100%;">
+                            </div>
+                            <div class="imagem">
+                                <img src="images/img_faixa_classificacao.png" style="width:100%; height:100%">
+                            </div>
+                        </div>
+
+                        <div class="texto_imc">
+                            <span>O que é o IMC?</span>
+                            <h5>O Índice de Massa Corporal (IMC) é uma medida simples que relaciona o peso e altura,
+                                ajudando a identificar se você está dentro da faixa de peso saudável para a sua altura
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="rodape">
+
+            <div class="anuncio">
+                <img class="img_rodape" src="images/img_rodape_left.png" alt="img">
+                <span>
+                    IMC é um indicador
+                    <h6>Não substitui a avaliação de um profissional de saúde</h6>
+                </span>
+            </div>
+
+            <div class="anuncio linha">
+                <img class="img_rodape" src="images/img_rodape_center.png" alt="img">
+                <span>
+                    IMC como referência
+                    <h6>Para um diagnótico completo, considere outros fatores, como composição corporal, idade e rotina
+                    </h6>
+                </span>
+            </div>
+
+            <div class="anuncio linha">
+                <img class="img_rodape" src="images/img_rodape_right.png" alt="img">
+                <span>
+                    Mais saúde
+                    <h6>Pequenas escolhas fazem grande diferença!</h6>
+                </span>
+            </div>
+
+            <div class="anuncio linha div_rodape_2">
+                <img class="img_rodape img_rodape_2" src="images/img_rodape_right_2.png">
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="textoIMC.js"></script>
+</body>
+
+</html>
