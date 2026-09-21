@@ -256,9 +256,12 @@ button{
 
 .button button::before{
     content: "\1f5a9";
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     height: 30px;
-    line-height: 0.3;
+    top: 0;
+    left: 0;
+    line-height: 0.4;
+    background-color: #cb03e2;
 }
 
 .tela_resultado{
