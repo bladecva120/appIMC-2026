@@ -237,7 +237,6 @@ input{
     display: flex;
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
-    position: relative;
 }
 
 button{
@@ -252,15 +251,6 @@ button{
     padding: 8px;
 }
 
-.button button::before{
-    content: "\1f5a9";
-    font-size: 3.2rem;
-    top: 0;
-    left: 0;
-    padding-left: 10px;
-    line-height: 0.7;
-    position: absolute;
-}
 
 .tela_resultado{
     grid-area: tela_resultado;
