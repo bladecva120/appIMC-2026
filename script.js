@@ -2,6 +2,8 @@ const botao = document.getElementById('botao');
 
 const btn_masculino = document.querySelector('.btn_sexo_masculino .simbolo_masculino');
 const btn_feminino = document.querySelector('.btn_sexo_feminino .simbolo_feminino');
+const corFundoMasc = document.querySelector('.btnMasc');
+const corFundoFem = document.querySelector('.btnFem')
 const texto_dados = document.querySelector('.texto_dados');
 const altura = document.getElementById('altura');
 const peso = document.querySelector('#peso');
@@ -17,17 +19,26 @@ const imagem = document.querySelector('.imagem');
 texto_dados.hidden = false;
 imagem.hidden = false;
 
+
+function alternarSelecao(elementoClicado, elementoDesmarcado){
+    elementoClicado.style.backgroundColor = '#004DEF';
+    elementoDesmarcado.style.backgroundColor = '#021323';
+}
+
 // VARIÁVEL SEXO
 let sexo = ''
 
 // CLICK NO BOTÃO PARA GUARDAR O VALOR NA VARIÁVEL SEXO
 btn_masculino.addEventListener('click', function(){
     sexo = 'Masculino';
+    alternarSelecao(corFundoMasc, corFundoFem);
+    
 });
 
 // CLICK NO BOTÃO PARA GUARDAR O VALOR NA VARIÁVEL SEXO
 btn_feminino.addEventListener('click', function(){
-    sexo = 'Feminino'
+    sexo = 'Feminino';
+    alternarSelecao(corFundoFem, corFundoMasc);
 });
 
 

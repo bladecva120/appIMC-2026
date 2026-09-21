@@ -40,19 +40,19 @@ header{
 }
 
 
-h2{
+.titulo_topo h2{
     margin-bottom: 0;
 }
 
-h3{
+.titulo_seus_dados h3{
     margin: 0;
-    font-size: 13px;
+    font-size: 1.2rem;
 }
 
 
-h6{
+.topo_right h6{
     margin: 0;
-    font-size: 8px;
+    font-size: 0.6rem;
 }
 
 
@@ -63,8 +63,13 @@ h6{
 .titulo_topo p{
     color: #02B8FD;
     text-align: left;
-    font-size: 8px;
+    font-size: 0.6rem;
     margin-top: 0;
+}
+
+.titulo_seus_dados h6{
+    margin: 0;
+    font-size: 0.6rem;
 }
 
 
@@ -120,7 +125,7 @@ h6{
     justify-content: start;
     align-items: center;
     padding: 10px 0 0 0;
-    font-size: 11px;
+    font-size: 0.8rem;
     border-radius: 5px 5px 0 0 ;
 }
 
@@ -130,11 +135,14 @@ h6{
     padding-bottom: 15px;
 }
 
+.sexo strong{
+    width: 100%;
+}
 
 .btn_sexo_masculino{
     display: flex;
     flex: 1;
-    font-size: 12px;
+    font-size: 0.8rem;
     border: 1px solid #0676f5;
     padding: 4px;
     margin-left: 5px;
@@ -149,7 +157,7 @@ h6{
 .btn_sexo_feminino{
     display: flex;
     flex: 1;
-    font-size: 12px;
+    font-size: 0.8rem;
     border: 1px solid #0676f5;
     padding: 4px;
     margin-right: 5px;
@@ -164,19 +172,19 @@ h6{
 
 .simbolo_masculino::before{
     content: "\2642";
-    font-size: 18px;
+    font-size: 1rem;
     margin-right: 8px;
 }
 
 .simbolo_feminino::before{
     content: "\2640";
-    font-size: 18px;
+    font-size: 1rem;
     margin-right: 8px;
 }
 
 .altura{
     display: flex;
-    font-size: 11px;
+    font-size: 0.8rem;
     align-items: center;
     position: relative;
     padding: 10px 0 0 0;
@@ -194,7 +202,7 @@ h6{
 
 .peso{
     display: flex;
-    font-size: 11px;
+    font-size: 0.8rem;
     align-items: center;
     position: relative;
     padding: 10px 0 0 0;
@@ -246,25 +254,28 @@ button{
 }
 
 .button strong{
-    font-size: 12px;
+    font-size: 0.9rem;
 }
 
 .button button::before{
     content: "\1f5a9";
-    font-size: 35px;
+    font-size: 2.2rem;
     line-height: 1;
 }
 
 .tela_resultado{
+    grid-area: tela_resultado;
     display: flex;
     flex: 1.5;
     margin-right: 10px;
+    margin-left: 10px;
     border-radius: 8px;
     background-color: #021323;
     border: 1px solid #0676f5;
 }
 
 .sub_tela_resultado{
+    grid-area: sub_tela_resultado;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -328,7 +339,7 @@ button{
 }
 
 .resultado{
-    font-size: 20px;
+    font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 130px;
 }
@@ -349,7 +360,7 @@ button{
 
 .sub_campo_texto{
     flex: 1;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -367,8 +378,9 @@ button{
 .texto_imc{
     position: relative;
     flex: 1.2;
-    font-size: 12px;
+    font-size: 0.7rem;
     padding: 3px 0 0 3px;
+    letter-spacing: 0.3px;
 }
 
 .texto_imc::before{
@@ -410,17 +422,23 @@ button{
 .anuncio{
     display: flex;
     flex: 1;
-    font-size: 10px;
 }
 
 .anuncio span{
-    text-align: left;
     line-height: 1.3;
+}
+
+.anuncio h6{
+    margin: 0;
+    font-size: 0.5rem;
+}
+
+.anuncio h3{
+    margin-bottom: 3px;
 }
 
 .linha{
     position: relative;
-    padding-left: 10px;
 }
 
 .linha::before{
@@ -430,7 +448,7 @@ button{
     top: 0;
     width: 1px;
     height: 100%;
-    background-image: radial-gradient(circle,#064893, #0275f8, #4397f7);
+    background-image: radial-gradient(circle,#064893, #0275f8, #020f1e);
 }
 
 .img_coracao_topo_left{
@@ -455,6 +473,141 @@ button{
     width: 100%;
 }
 
-.div_rodape_2{
-    flex: 0.5;
+
+
+
+
+
+/*************** CELULAR ***********************/
+@media (max-width: 480px){
+    .container{
+    margin-right: 10px;
+    }
+    .titulo_topo h2{
+        font-size: 0.8rem;
+    }
+    .topo_right{
+    padding-left: 20px;
+    }
+
+    .topo_right h6{
+    margin: 0;
+    font-size: 0.4rem;
+    flex: 2;
+    width: 100%;
+    }
+
+    .img_coracao_topo_left{
+    border-radius: 16px;
+    width: 50px;
+    height: 50px;
+    }
+
+    .img_coracao_topo_right{
+    width: 20px;
+    height: 20px;    
+    }
+
+    .menu{
+        margin: 10px;
+    }
+
+    .secoes{
+        display: block;
+    }
+
+    .rodape{
+        display: block;
+    padding: 0 10px 5px 3px;
+    }
+
+    .linha{
+    position: relative;
+    }
+
+.linha::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-image: radial-gradient(circle,#064893, #0275f8, #020f1e);
+    }
+
+    .anuncio span{
+    line-height: 1;
+    padding-bottom: 7px;
+    font-size: 0.6rem;
+    }
+    .img_rodape_2{
+    width: 100%;
+    }
 }
+
+/* TABLET */
+/*@media (min-width: 481px) and (max-width: 767px){
+    .container{
+        grid-template-areas: 
+        "header header header nav"
+        "section section section section"
+        "anuncio anuncio anuncio anuncio"
+        "footer footer footer footer"
+    ;
+    footer{
+        background-color: brown;
+    }
+    }
+}*/
+
+/* TABLE GRANDE */
+/*@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        grid-template-areas: 
+        "header header header header"
+        "nav section section section"
+        "anuncio anuncio anuncio anuncio"
+        "footer footer footer footer"
+    ;
+    section{
+        padding: 40px;
+        font-size: 20px;
+        background-color: aqua;
+    }
+    }
+}*/
+
+/* NOTEBOOK */
+/*@media (min-width: 992px) and (max-width: 1199px){
+    
+    .container{
+        grid-template-areas: 
+        "header header header header"
+        "nav section section section"
+        "anuncio anuncio anuncio anuncio"
+        "footer footer footer footer"
+    ;
+    section{
+        padding: 40px;
+        font-size: 20px;
+        background-color: blue;
+    }
+    }
+}*/
+
+/* DESKTOP */
+/*@media (min-width: 1200px){
+    .container{
+        grid-template-areas: 
+        "header header header"
+        "nav section section"
+        "footer footer anuncio"
+    ;
+    .anuncio{
+        background-color: darkolivegreen;
+        color: white;
+        font-size: 20px;
+        padding: 30px;
+    }
+    }
+}*/
