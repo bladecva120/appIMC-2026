@@ -243,7 +243,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
     width: 100%;
     margin: 5px;
     border-radius: 7px;
@@ -251,16 +250,15 @@ button{
     color: white;
     border-style: none;
     cursor: pointer;
-}
-
-.button strong{
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding: 5px;
 }
 
 .button button::before{
     content: "\1f5a9";
-    font-size: 2.2rem;
-    line-height: 1;
+    font-size: 3.8rem;
+    height: 30px;
+    line-height: 0.3;
 }
 
 .tela_resultado{
