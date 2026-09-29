@@ -50,7 +50,7 @@ btn_feminino.addEventListener('click', function(){
 botao.addEventListener('click', function(){
 
 
-    //PEGANDO O VALORES DIGITADOS
+    //PEGANDO OS VALORES DIGITADOS
     const valorAltura = Number(altura.value);
     const valorPeso = Number(peso.value);
 
